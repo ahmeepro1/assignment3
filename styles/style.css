@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  background-color: #316dc3;
+  height: 40px;
+}
+#social_icons {
+  margin: 0px 40px;
+}
+#social_icons img {
+  width: 20px;
+  margin: 10px 10px;
+}
+#header_para {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+#header_buttons {
+  margin-top: 07px;
+
+  align-content: center;
+}
+#header_buttons button {
+  margin: 0px 8px;
+  height: 25px;
+}
+/*-----
+-------------------Navigation Bar-----
+----*/
+nav {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: #f7f8fa;
+  height: 70px;
+}
+
+nav #menu ul {
+  float: left;
+}
+nav #menu ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+nav #menu ul li a {
+  display: block;
+  color: #222;
+  text-decoration: none;
+  margin: 10px 0px;
+  padding: 16px 14px;
+}
+nav #menu ul li a:hover {
+  background-color: #316dc3;
+  color: white;
+  border-radius: 1em;
+}
+nav #menu ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #f7f8fa;
+  padding: 10px;
+}
+nav #menu ul li:hover ul {
+  display: block;
+}
+
+nav #menu ul li ul li {
+  width: 180px;
+}
+nav #menu ul li ul li a {
+  padding: 8px 14px;
+}
+nav #menu ul li ul li a:hover {
+  background-color: #316dc3;
+  color: white;
+}
+nav #logo img {
+  width: 200px;
+  margin: 5px 80px;
+}
+/*-----
+----------------Slider-----
+----*/
+.slider {
+  width: 100%;
+  height: 500px;
+
+  animation-name: slider;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+@keyframes slider {
+  0% {
+    background-image: url(../images/slide1.png);
+  }
+  14.28% {
+    background-image: url(../images/slide2.png);
+  }
+  28.57% {
+    background-image: url(../images/slide3.png);
+  }
+  42.85% {
+    background-image: url(../images/slide4.png);
+  }
+  57.14% {
+    background-image: url(../images/slide5.png);
+  }
+  71.42% {
+    background-image: url(../images/slide6.png);
+  }
+  85.71% {
+    background-image: url(../images/slide7.png);
+  }
+  100% {
+    background-image: url(../images/slide1.png);
+  }
+}
+/*-----
+----------------sliding text-----
+----*/
+.sliding_text {
+  width: 85%;
+  background-color: #316dc3;
+  margin: 10px auto;
+}
+.sliding_text marquee {
+  color: white;
+  height: 20px;
+}
+#green {
+  color: #8dc63f;
+}
+#blue {
+  color: #316dc3;
+}
+/*-----
+-------------IntroDuction-----
+----*/
+.introduction {
+  margin: 10px 0px;
+  background-color: #f7f8fa;
+  height: 700px;
+}
+.introduction h1 {
+  text-align: center;
+  font-size: 45px;
+  padding: 20px;
+}
+.introduction p {
+  width: 70%;
+  margin: 20px auto;
+  text-align: justify;
+  position: relative;
+  top: 70px;
+  color: #6f7070;
+  line-height: 25px;
+}
+.introduction img {
+  position: relative;
+  left: 650px;
+  top: 20px;
+}
+.introduction hr {
+  width: 10%;
+  border: 3px solid #8dc63f;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*-------------Stats-------------------*/
+.stats {
+  background-color: #2655e8;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.stats div {
+  padding: 90px 0px;
+  color: white;
+}
+.stats div h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 10px;
+}
+.stats div h3 {
+  text-align: center;
+}
+.stats div span {
+  color: #00ff00;
+}
+
+/*-------------DOING-------------------*/
+.doing {
+  width: 100%;
+  background-color: #f7f8fa;
+  height: 700px;
+}
+.doing h1 {
+  text-align: center;
+  padding: 30px;
+  font-size: 36px;
+  color: #316dc3;
+}
+.doing h1 span {
+  color: #427900;
+}
+.doing #doing_divs {
+  width: 80%;
+  margin: 50px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+.doing #doing_divs div {
+  box-shadow: 5px 10px 8px #888888;
+  background-color: white;
+  height: 170px;
+  color: #316dc3;
+}
+.doing #doing_divs div h3 {
+  text-align: center;
+  margin: 10px;
+}
+.doing img {
+  position: relative;
+  left: 650px;
+  top: 20px;
+}
+.doing hr {
+  width: 10%;
+  border: 3px solid #8dc63f;
+  text-align: center;
+  margin: 0 auto;
+}
+.doing #doing_divs  i{
+  margin: 20px;
+  color: #03486D;
+}
+/*-----Mission and Up coming Projects------*/
+.mnu {
+  width: 100%;
+  height: 500px;
+}
+#mission {
+  width: 65%;
+  float: left;
+  margin: 30px;
+}
+#mission_boxes {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 2em;
+}
+#mission h1 {
+  font-size: 24px;
+  margin: 20px;
+  color: #316dc3;
+}
+#mission_boxes div {
+  background-color: #f7f8fa;
+
+  width: 330px;
+  padding: 33px;
+}
+#events {
+  width: 25%;
+  float: right;
+  margin: 30px;
+}
+#events h1 {
+  margin: 20px;
+  color: #316dc3;
+}
+#events marquee {
+  padding: 10px;
+  margin: 10px;
+  color: #6f7070;
+  line-height: 25px;
+}
+/*-----------Image Gallery---------*/
+.gallery {
+  width: 100%;
+  height: 500px;
+}
+.gallery h1 {
+  font-size: 36px;
+  color: #316dc3;
+  text-align: center;
+  padding: 30px;
+}
+.gallery h1 span {
+  color: #427900;
+}
+.gallery #images {
+  width: 90%;
+  margin: 40px auto;
+
+  padding: 5px;
+}
+.gallery #images img {
+  width: 235px;
+}
+#gaga {
+  position: relative;
+  left: 650px;
+  top: 20px;
+}
+.gallery hr {
+  width: 10%;
+  border: 3px solid #8dc63f;
+  text-align: center;
+  margin: 0 auto;
+}
+/*------------Footer---------*/
+footer {
+  background-color: #25272e;
+  width: 100%;
+  color: white;
+}
+footer #upper {
+  width: 90%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr  1fr;
+  grid-gap: 1em;
+  margin: 40px auto;
+   padding: 20px;
+}
+#contact  p{
+  margin: 20px;
+  font-size: 14px;
+  color: #e2e2e2;
+  line-height: 30px;
+
+}
+#contact i{
+  color: green;
+  margin: 5px;
+}
+#links hr {
+  width: 10%;
+  border: 2px solid green;
+  text-align: center;
+  margin: 0px 30px;
+}
+#upper  div{
+  
+}
+#upper h4{
+  margin: 30px;
+}
+
+footer #lower {
+  width: 100%;
+  height: 50px;
+  background-color: #316dd9;
+
+}
+#social_iconss img {
+  width: 20px;
+  margin: 5px;
+}
+#lower  p{
+  position: relative;
+  top: 18px;
+  left: 90px;
+  color: #e2e2e2;
+  font-size: 13px;
+}
